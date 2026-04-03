@@ -6,3 +6,12 @@
   height: 60px;
   width: auto;
 }
+
+.learning-header .logo {
+  height: 60px;
+}
+
+.learning-header .logo img {
+  height: 60px;
+  width: auto;
+}
