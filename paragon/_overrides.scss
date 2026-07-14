@@ -1,5 +1,66 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
+
+// Brand palette: teal primary with an amber accent for "brand"-variant
+// buttons/links (e.g. CTAs like "Browse courses", masquerade bar). Mirrors
+// the runtime override in the tutor-indigo plugin's BrandColorOverride
+// component so both the built package and the live site agree on colors.
+:root {
+  --pgn-color-primary-base: #1E5F73FF;
+  --pgn-color-primary-100: #FAFBFCFF;
+  --pgn-color-primary-200: #D2DADDFF;
+  --pgn-color-primary-300: #9BAEB4FF;
+  --pgn-color-primary-400: #608591FF;
+  --pgn-color-primary-600: #1B5769FF;
+  --pgn-color-primary-700: #194E5EFF;
+  --pgn-color-primary-800: #184959FF;
+  --pgn-color-primary-900: #164654FF;
+  --pgn-color-primary-light: #FCFDFDFF;
+
+  --pgn-color-action-default-primary-base: #1E5F73FF;
+  --pgn-color-action-default-primary-100: #FAFBFCFF;
+  --pgn-color-action-default-primary-200: #D2DADDFF;
+  --pgn-color-action-default-primary-300: #9BAEB4FF;
+  --pgn-color-action-default-primary-400: #608591FF;
+  --pgn-color-action-default-primary-500: #1E5F73FF;
+  --pgn-color-action-default-primary-600: #1C5768FF;
+  --pgn-color-action-default-primary-700: #194D5EFF;
+  --pgn-color-action-default-primary-800: #184A59FF;
+  --pgn-color-action-default-primary-900: #174553FF;
+
+  --pgn-color-badge-focus-bg-primary: #1E5F73FF;
+  --pgn-color-badge-focus-box-shadow-primary: #1E5F730D;
+
+  --pgn-color-brand-base: #FFB400FF;
+  --pgn-color-brand-100: #FFF9EBFF;
+  --pgn-color-brand-200: #FFECBFFF;
+  --pgn-color-brand-300: #FFDD8CFF;
+  --pgn-color-brand-400: #FFC947FF;
+  --pgn-color-brand-600: #E5A200FF;
+  --pgn-color-brand-700: #CC9000FF;
+  --pgn-color-brand-800: #B27E00FF;
+  --pgn-color-brand-900: #996C00FF;
+
+  --pgn-color-action-default-brand-base: #996C00FF;
+  --pgn-color-action-default-brand-100: #FFECBFFF;
+  --pgn-color-action-default-brand-200: #FFDD8CFF;
+  --pgn-color-action-default-brand-300: #FFC947FF;
+  --pgn-color-action-default-brand-400: #E5A200FF;
+  --pgn-color-action-default-brand-500: #996C00FF;
+  --pgn-color-action-default-brand-600: #8A6100FF;
+  --pgn-color-action-default-brand-700: #7A5600FF;
+  --pgn-color-action-default-brand-800: #6B4B00FF;
+  --pgn-color-action-default-brand-900: #5C4000FF;
+
+  --pgn-color-btn-text-brand: #1F2933FF;
+  --pgn-color-btn-hover-text-brand: #1F2933FF;
+  --pgn-color-btn-active-text-brand: #1F2933FF;
+  --pgn-color-link-brand-hover: #7A5600FF;
+  --pgn-color-link-brand-inline-decoration: #FFB4004D;
+  --pgn-color-link-brand-inline-hover-base: #7A5600FF;
+  --pgn-color-link-brand-inline-hover-decoration: #7A5600FF;
+}
+
 .site-header-desktop .logo {
   height: 25px;
 }
