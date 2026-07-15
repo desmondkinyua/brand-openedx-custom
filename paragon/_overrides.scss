@@ -59,6 +59,19 @@
   --pgn-color-link-brand-inline-decoration: #FFB4004D;
   --pgn-color-link-brand-inline-hover-base: #7A5600FF;
   --pgn-color-link-brand-inline-hover-decoration: #7A5600FF;
+
+  // Filled "primary"-variant buttons (Resume, Begin Course, search, etc.) are
+  // amber too. Only these leaf tokens are overridden - everything else (header
+  // background, links, focus rings, outline-primary buttons) still chains
+  // through --pgn-color-primary-* above and stays teal.
+  --pgn-color-btn-bg-primary: #FFB400FF;
+  --pgn-color-btn-hover-bg-primary: #E5A200FF;
+  --pgn-color-btn-hover-border-primary: #E5A200FF;
+  --pgn-color-btn-active-bg-primary: #CC9000FF;
+  --pgn-color-btn-active-border-primary: #CC9000FF;
+  --pgn-color-btn-text-primary: #1F2933FF;
+  --pgn-color-btn-hover-text-primary: #1F2933FF;
+  --pgn-color-btn-active-text-primary: #1F2933FF;
 }
 
 .site-header-desktop .logo {
