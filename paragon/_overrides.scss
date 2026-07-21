@@ -61,9 +61,9 @@
   --pgn-color-link-brand-inline-hover-decoration: #7A5600FF;
 
   // Filled "primary"-variant buttons (Resume, Begin Course, search, etc.) are
-  // amber too. Only these leaf tokens are overridden - everything else (header
-  // background, links, focus rings, outline-primary buttons) still chains
-  // through --pgn-color-primary-* above and stays teal.
+  // amber too. Only these leaf tokens are overridden - the header background,
+  // links, and focus rings still chain through --pgn-color-primary-* above
+  // and stay teal.
   --pgn-color-btn-bg-primary: #FFB400FF;
   --pgn-color-btn-hover-bg-primary: #E5A200FF;
   --pgn-color-btn-hover-border-primary: #E5A200FF;
@@ -72,6 +72,24 @@
   --pgn-color-btn-text-primary: #1F2933FF;
   --pgn-color-btn-hover-text-primary: #1F2933FF;
   --pgn-color-btn-active-text-primary: #1F2933FF;
+
+  // Outline-primary buttons (Refine, account-menu toggle) are amber too.
+  // Default state uses a darker amber shade for contrast against a
+  // transparent/white background (the bright amber above is only for filled
+  // buttons, where dark text sits on top of it - here the amber IS the
+  // text/border color, so it needs to be dark enough itself).
+  --pgn-color-btn-text-outline-primary: #996C00FF;
+  --pgn-color-btn-border-outline-primary: #996C00FF;
+  --pgn-color-btn-hover-bg-outline-primary: #FFF9EBFF;
+  --pgn-color-btn-hover-border-outline-primary: #5C4000FF;
+  --pgn-color-btn-hover-text-outline-primary: #5C4000FF;
+  --pgn-color-btn-active-bg-outline-primary: #FFECBFFF;
+  --pgn-color-btn-active-border-outline-primary: #5C4000FF;
+
+  // Icon-only buttons using variant="primary" (e.g. course-card kebab menu).
+  // Background stays neutral/transparent - only the icon color (and the tint
+  // of its hover/active circle, which chains from this same token) changes.
+  --pgn-color-icon-button-text-primary-base: #996C00FF;
 }
 
 .site-header-desktop .logo {
